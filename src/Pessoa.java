@@ -1,5 +1,5 @@
 class Pessoa {
-    String nome=null;
+    String nome;
     String cep= null;
     String endereço=null;
     String numero=null;
