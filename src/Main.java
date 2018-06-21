@@ -1,14 +1,20 @@
-import java.util.ArrayList;
-
         public class Main {
             public static void main(String[] args) {
-                Pedido pedido = new Pedido();
-                Produto primeiroProduto = new Produto("Placa Mãe",485.60);
-                Produto segundoProduto = new Produto("Placa de Video",1330.99);
-                Produto terceiroProduto = new Produto("Memoria",586.82);
-                Produto quartoProduto = new Produto("SSD",189.98);
-                Produto quitoProduto = new Produto("Fonte",269.48);
 
+                Produto primeiroProduto = new Produto("Placa Mãe", 485.60);
+                Produto segundoProduto = new Produto("Placa de Video", 1330.99);
+                Produto terceiroProduto = new Produto("Memoria", 586.82);
+                Produto quartoProduto = new Produto("SSD", 189.98);
+                Produto quitoProduto = new Produto("Fonte", 269.48);
+
+                Pedido pedido = new Pedido();
+                pedido.adicionarProduto(primeiroProduto);
+                pedido.adicionarProduto(segundoProduto);
+                pedido.adicionarProduto(terceiroProduto);
+                pedido.adicionarProduto(quartoProduto);
+                pedido.adicionarProduto(quitoProduto);
+                pedido.calcularTotal();
+}
 
 
 
@@ -51,5 +57,5 @@ import java.util.ArrayList;
 //        });
 //
 //    }
-}
+//}
 
